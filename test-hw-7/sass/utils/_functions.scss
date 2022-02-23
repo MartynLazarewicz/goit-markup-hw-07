@@ -1,0 +1,24 @@
+@function get-color($color, $opacity: 1) {
+  @if map-has-key($colors, $color) {
+    @return transparentize(map-get($colors, $color), 1 - $opacity);
+  }
+  @return #f0f;
+}
+
+@function get-font-weight($fontw) {
+  @if map-has-key($font-weight, $fontw) {
+    @return (map-get($font-weight, $fontw));
+  }
+}
+
+@function get-font-family($fontf) {
+  @if map-has-key($font-family, $fontf) {
+    @return (map-get($font-family, $fontf));
+  }
+}
+
+@function get-font-size($fonts) {
+  @if map-has-key($font-size, $fonts) {
+    @return (map-get($font-size, $fonts));
+  }
+}

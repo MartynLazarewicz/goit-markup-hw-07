@@ -1,0 +1,90 @@
+.header {
+  height: 80px;
+  border-bottom: 1px solid get-color('very-light-gray');
+}
+
+.navigation {
+  height: 80px;
+}
+
+.nav {
+  gap: 93px;
+
+  &__logo {
+    font-size: get-font-size('26');
+    font-family: get-font-family('raleway'), sans-serif;
+    font-weight: get-font-weight('bold');
+    letter-spacing: get-l-spacing('03');
+    line-height: get-l-height('31');
+    &--accent {
+      color: get-color('accent');
+    }
+  }
+
+  &__list {
+    gap: 46px;
+  }
+
+  &__link {
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      color: get-color('accent');
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      display: block;
+      top: 45px;
+      right: 0;
+      width: 0;
+      height: 5px;
+      background-color: get-color('accent');
+      border-radius: 4px;
+      transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover::after {
+      width: 100%;
+      left: 0;
+    }
+
+    &--active {
+      color: get-color('accent');
+
+      &::after {
+        position: absolute;
+        content: '';
+        display: block;
+        top: 45px;
+        right: 0;
+        width: 100%;
+        height: 5px;
+        background-color: get-color('accent');
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+.contact {
+  gap: 50px;
+
+  &__link {
+    color: get-color('secondary');
+    fill: get-color('secondary');
+    font-size: get-font-size('14');
+    font-weight: get-font-weight('light');
+    gap: 10px;
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      color: get-color('accent');
+      fill: get-color('accent');
+    }
+  }
+}
