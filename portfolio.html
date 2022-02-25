@@ -116,10 +116,18 @@
           </li>
           <li class="footer__item">
             <h4 class="footer__title">Zapisz się do newslettera</h4>
-            <form class="newsletter" action="" method="post">
-              <input type="email" name="email" id="email" required placeholder="E-mail" aria-label="email" />
-              <button class="newsletter__btn">
-                <input class="newsletter__btn--input" type="submit" value="Zapisz się" />
+            <form class="newsletter flex flex--ai-c flex--jc-c" action="" method="post">
+              <input
+                class="newsletter__input"
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="E-mail"
+                aria-label="email"
+              />
+              <button class="newsletter__btn flex flex--ai-c flex--jc-c">
+                <input class="newsletter__btn--submit" type="submit" value="Zapisz się" />
                 <svg width="24" height="24">
                   <use href="images/sprite.svg#send"></use>
                 </svg>

@@ -13,7 +13,6 @@ body {
   font-weight: get-font-weight('standard');
   font-family: get-font-family('roboto'), sans-serif;
   color: get-color('primary');
-  //   background-color: get-color('primary', 0.5);
 }
 
 .container {
@@ -45,28 +44,28 @@ button {
 /* Helper classes */
 
 .pt {
-  padding-top: 94px;
+  padding-top: get-gapn('94');
 }
 .pb {
-  padding-bottom: 94px;
+  padding-bottom: get-gapn('94');
 }
 
 .py {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: get-gapn('94');
+  padding-bottom: get-gapn('94');
 }
 
 .mt {
-  margin-top: 94px;
+  margin-top: get-gapn('94');
 }
 
 .mb {
-  margin-bottom: 94px;
+  margin-bottom: get-gapn('94');
 }
 
 .my {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  margin-top: get-gapn('94');
+  margin-bottom: get-gapn('94');
 }
 
 .flex {
