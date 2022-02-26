@@ -567,9 +567,158 @@ button {
 }
 
 .modal__form__container {
+  width: 100%;
+  padding: 40px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.modal__form__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4375rem;
+  letter-spacing: 0.03em;
+  padding-bottom: 12px;
+}
+
+.modal__form__label {
+  width: 100%;
+  color: #757575;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 0.875rem;
+  letter-spacing: 0.01em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal__form__label-wrapper {
+  color: #757575;
+  font-size: 12px;
+  line-height: 0.875rem;
+  letter-spacing: 0.01em;
+  padding-bottom: 4px;
+  margin-top: 4px;
+}
+
+.modal__form__input {
+  height: 40px;
+  width: 100%;
+  border: 1px solid rgba(117, 117, 117, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  outline: none;
+  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__form__input:focus {
+  border: 1px solid #2196f3;
+}
+
+.modal__form__input:focus + .modal__form__svg {
+  fill: #2196f3;
+}
+
+.modal__form__textarea {
+  color: #757575;
+  padding: 12px 16px;
+  resize: none;
+  border: 1px solid rgba(117, 117, 117, 0.2);
+  border-radius: 4px;
+  height: 120px;
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.modal__form__textarea::-webkit-input-placeholder {
+  color: #757575;
+}
+
+.modal__form__textarea:-ms-input-placeholder {
+  color: #757575;
+}
+
+.modal__form__textarea::-ms-input-placeholder {
+  color: #757575;
+}
+
+.modal__form__textarea::placeholder {
+  color: #757575;
+}
+
+.modal__form__textarea:focus {
+  border: 1px solid #2196f3;
+}
+
+.modal__form__svg {
+  position: absolute;
+  margin-left: 12px;
+}
+
+.modal__form__policy-label {
+  gap: 4px;
+  cursor: pointer;
+}
+
+.modal__form__policy-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.modal__form__policy-input:checked ~ .modal__form__policy-checkmark {
+  background-color: #2196f3;
+  border: 1px solid #2196f3;
+}
+
+.modal__form__policy-input:checked ~ .modal__form__policy-checkmark .modal__form__policy-checkmark-svg {
+  opacity: 1;
+}
+
+.modal__form__policy-checkmark {
+  height: 16px;
+  width: 15px;
+  border: 1px solid #2f303a;
+  border-radius: 2px;
+  background-color: #eee;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__form__policy-checkmark-svg {
+  opacity: 0;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__form__policy-link {
+  color: #2196f3;
+  text-decoration: underline;
+}
+
+.modal__form__btn {
+  color: white;
+  background-color: #2196f3;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875rem;
+  letter-spacing: 0.06em;
+  padding: 10px 41px;
+  border: 0;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  width: 200px;
+  margin-top: 30px;
 }
 /*# sourceMappingURL=main.css.map */

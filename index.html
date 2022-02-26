@@ -78,59 +78,59 @@
             </button>
             <form action="" class="modal__form">
               <div class="modal__form__container flex flex--ai-c flex--jc-c">
-                <h3>Zostaw swoje dane w formularzu poniżej</h3>
+                <h3 class="modal__form__title">Zostaw swoje dane w formularzu poniżej</h3>
 
-                <label class="form-label" for="imie"
+                <label class="modal__form__label" for="imie"
                   >Imie
-                  <div class="label-wrapper">
-                    <input class="form-input" type="text" required name="imie" id="imie" />
-                    <svg width="18" height="18">
-                      <use href="images/sprite.svg#icon-person" width="18" height="18"></use>
+                  <div class="modal__form__label-wrapper flex flex--ai-c">
+                    <input class="modal__form__input" type="text" required name="imie" id="imie" />
+                    <svg class="modal__form__svg" width="18" height="18">
+                      <use href="images/sprite.svg#person-form" width="18" height="18"></use>
                     </svg>
                   </div>
                 </label>
 
-                <label class="form-label" for="tel"
+                <label class="modal__form__label" for="tel"
                   >Telefon
-                  <div class="label-wrapper">
-                    <input class="form-input" type="tel" required name="tel" id="tel" />
-                    <svg width="18" height="18">
-                      <use href="images/sprite.svg#icon-phone-black" width="18" height="18"></use>
+                  <div class="modal__form__label-wrapper flex flex--ai-c">
+                    <input class="modal__form__input" type="tel" required name="tel" id="tel" />
+                    <svg class="modal__form__svg" width="18" height="18">
+                      <use href="images/sprite.svg#phone-form" width="18" height="18"></use>
                     </svg>
                   </div>
                 </label>
 
-                <label class="form-label" for="mail"
+                <label class="modal__form__label" for="mail"
                   >Email
-                  <div class="label-wrapper">
-                    <input class="form-input" type="email" required name="email" id="mail" />
-                    <svg class="form-svg" width="18" height="18">
-                      <use href="images/sprite.svg#icon-email-black" width="18" height="18"></use>
+                  <div class="modal__form__label-wrapper flex flex--ai-c">
+                    <input class="modal__form__input" type="email" required name="email" id="mail" />
+                    <svg class="modal__form__svg" width="18" height="18">
+                      <use href="images/sprite.svg#email-form" width="18" height="18"></use>
                     </svg>
                   </div>
                 </label>
 
-                <label class="form-label" for="comment"
+                <label class="modal__form__label flex flex--jc-c" for="comment"
                   >Komentarz
-                  <textarea name="comment" id="comment" placeholder="Wprowadź tekst"></textarea>
+                  <textarea class="modal__form__textarea" name="comment" id="comment" placeholder="Wprowadź tekst"></textarea>
                 </label>
 
-                <div class="policy-wrapper">
-                  <label class="policy" for="policy">
-                    <input class="policy" type="checkbox" unchecked required name="policy" id="policy" />
-                    <span class="checkmark">
-                      <svg class="checkmark-svg" width="15" height="16">
-                        <use href="images/sprite.svg#icon-checkbox" width="15" height="16"></use>
+                <div class="modal__form__policy-wrapper">
+                  <label class="modal__form__policy-label flex flex--ai-c flex--jc-c" for="policy">
+                    <input class="modal__form__policy-input" type="checkbox" unchecked required name="policy" id="policy" />
+                    <span class="modal__form__policy-checkmark">
+                      <svg class="modal__form__policy-checkmark-svg" width="13" height="16">
+                        <use href="images/sprite.svg#checkbox" width="13" height="16"></use>
                       </svg>
                     </span>
-                    <span class="policy-text">Oświadczam iż akceptuję</span>
-                    <a href="#">Regulamin</a>
-                    <span class="policy-text">i</span>
-                    <a href="#">Politykę Prywatności.</a>
+                    <span>Oświadczam iż akceptuję</span>
+                    <a class="modal__form__policy-link" href="#">Regulamin</a>
+                    <span>i</span>
+                    <a class="modal__form__policy-link" href="#">Politykę Prywatności.</a>
                   </label>
                 </div>
 
-                <button class="modal-btn" type="submit">Wyślij</button>
+                <button class="modal__form__btn" type="submit">Wyślij</button>
               </div>
             </form>
           </div>
