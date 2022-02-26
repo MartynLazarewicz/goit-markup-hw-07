@@ -43,29 +43,34 @@ button {
 
 /* Helper classes */
 
-.pt {
-  padding-top: get-gapn('94');
-}
-.pb {
-  padding-bottom: get-gapn('94');
+.padding {
+  &--y {
+    padding-top: get-gapn('94');
+    padding-bottom: get-gapn('94');
+  }
+
+  &--t {
+    padding-top: get-gapn('94');
+  }
+
+  &--b {
+    padding-bottom: get-gapn('94');
+  }
 }
 
-.py {
-  padding-top: get-gapn('94');
-  padding-bottom: get-gapn('94');
-}
+.margin {
+  &--y {
+    margin-top: get-gapn('94');
+    margin-bottom: get-gapn('94');
+  }
 
-.mt {
-  margin-top: get-gapn('94');
-}
+  &--t {
+    margin-top: get-gapn('94');
+  }
 
-.mb {
-  margin-bottom: get-gapn('94');
-}
-
-.my {
-  margin-top: get-gapn('94');
-  margin-bottom: get-gapn('94');
+  &--b {
+    margin-bottom: get-gapn('94');
+  }
 }
 
 .flex {
