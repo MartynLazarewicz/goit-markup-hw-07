@@ -466,7 +466,7 @@ button {
 }
 
 .hero {
-  background-image: url(../../../images/hero.jpg);
+  background-image: url(../images/hero.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
