@@ -125,6 +125,11 @@
     &__policy-wrapper {
     }
     &__policy-label {
+      font-size: get-font-size('14');
+      font-weight: get-font-weight('standard');
+      line-height: get-line-height('24');
+      letter-spacing: get-letter-spacing('03');
+      color: get-color('secondary');
       gap: get-gapn('4');
       cursor: pointer;
     }

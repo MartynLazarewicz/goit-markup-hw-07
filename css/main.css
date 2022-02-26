@@ -663,6 +663,11 @@ button {
 }
 
 .modal__form__policy-label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.03em;
+  color: #757575;
   gap: 4px;
   cursor: pointer;
 }
