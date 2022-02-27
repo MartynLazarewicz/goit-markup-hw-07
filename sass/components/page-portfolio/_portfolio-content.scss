@@ -24,7 +24,7 @@
 
     &__link {
       &:hover .portfolio__content__overlay,
-      &:focus {
+      &:focus .portfolio__content__overlay {
         transform: translateY(-100%);
       }
     }

@@ -110,6 +110,11 @@
     }
   }
   &__btn {
+    font-size: get-font-size('16');
+    line-height: get-line-height('30');
+    font-weight: get-font-weight('bold');
+    letter-spacing: get-letter-spacing('06');
+    color: get-color('white');
     gap: 24px;
     padding: get-gapn('10') get-gapn('28') get-gapn('10') get-gapn('42');
     border-radius: get-border-r('4');
@@ -118,16 +123,5 @@
     background-color: get-color('accent');
     fill: get-color('white');
     cursor: pointer;
-
-    &--submit {
-      font-size: get-font-size('16');
-      line-height: get-line-height('30');
-      font-weight: get-font-weight('bold');
-      letter-spacing: get-letter-spacing('06');
-      color: get-color('white');
-      background-color: transparent;
-      border: 0;
-      cursor: pointer;
-    }
   }
 }
